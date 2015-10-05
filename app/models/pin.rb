@@ -2,7 +2,7 @@ class Pin < ActiveRecord::Base
     belongs_to :user
     
     has_attached_file :image, {
-            :styles => { :medium => "300x300>", :thumb => "100x100>" },
+            :styles => { :large => "700x", :medium => "300x300>", :thumb => "100x100>" },
             :default_url => "/images/thumbnail/blank-recipe.png"
         }
 
